@@ -1,6 +1,12 @@
+import { Form } from './components/Form';
+import { NoteList}  from './components/NoteList'
+
 function App() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <Form />
+      <NoteList />
+    </>
   );
 }
 
