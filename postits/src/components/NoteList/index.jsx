@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Postit } from "../Postit";
+import "./style.css";
 
 export class NoteList extends Component{
     render (){
         return (
-            <ul>
-                {Array.of("Trabalho", "Trabalho", "Estudos").map(item => {
+            <ul className="note-list">
+                {Array.of("Trabalho", "Trabalho", "Estudos").map((item, index) => {
                     return (
-                        <li>
+                        <li key={index}>
                             <Postit />
-                            <div>{item}</div>
                         </li>
                     )
                 })}

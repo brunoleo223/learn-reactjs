@@ -1,0 +1,6 @@
+.postit{
+    list-style-type: none;
+    padding: 10px 20px;
+    background-color: rgb(239, 202, 66);
+    border-top: 20px solid rgb(227, 191, 61);
+} 
