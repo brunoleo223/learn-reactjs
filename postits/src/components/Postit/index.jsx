@@ -5,8 +5,8 @@ export class Postit extends Component {
     render() {
         return(
             <section className='postit'>
-                <h3>Título</h3>
-                <p>Descrição da nota</p>
+                <h3>{this.props.title}</h3>
+                <p>{this.props.description}</p>
             </section>
             )
         }
