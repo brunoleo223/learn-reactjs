@@ -21,12 +21,18 @@ class App extends Component{
     }
     this.setState(newState)
   }
+
+  handleDeletePostit(index){
+    const listOfPostits = this.state.postits;
+    listOfPostits.splice(index,1);
+    this.setState({postits: listOfPostits})
+  }
   
   render() {
     return (
       <>
         <Form handleCreatPostit={this.handleCreatPostit.bind(this)} />
-        <NoteList postits={this.state.postits} /> 
+        <NoteList handleDeletePostit={this.handleDeletePostit.bind(this)} postits={this.state.postits} /> 
       </>
       );
     }

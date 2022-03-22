@@ -9,7 +9,12 @@ export class NoteList extends Component{
                 {this.props.postits.map((item, index) => {
                     return (
                         <li key={index}>
-                            <Postit title={item.title} description={item.description} />
+                            <Postit
+                                index = {index}
+                                handleDeletePostit = {this.props.handleDeletePostit}
+                                title={item.title} 
+                                description={item.description} 
+                            />
                         </li>
                     )
                 })}
